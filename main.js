@@ -56,7 +56,7 @@ class Node {
     }
 }
 
-fs.readFile (`${__dirname}/casoMC14a.txt`, (error, input) => {
+fs.readFile (`${__dirname}/casoMC4a.txt`, (error, input) => {
     if (error) {
         return console.error (error);
     }
