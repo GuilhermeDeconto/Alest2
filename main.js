@@ -1,4 +1,6 @@
 const fs = require ("fs");
+const prompt = require ("readline-sync");
+const path = require ("path");
 
 class Node {
     constructor (name, value, parent=null, children=[]) {
@@ -56,7 +58,15 @@ class Node {
     }
 }
 
-fs.readFile (`${__dirname}/casoMC4a.txt`, (error, input) => {
+var files = fs.readdirSync (path.join (__dirname, "files"));
+console.log ("Escolha o arquivo a ser lido: ");
+for (var i = 0; i < files.length; i++) {
+    console.log (`${i} - ${files[i]}`);
+}
+var selectedFile = prompt.questionInt ("> ");
+
+
+fs.readFile (path.join (path.join (__dirname, "files"), files[selectedFile]), (error, input) => {
     if (error) {
         return console.error (error);
     }
