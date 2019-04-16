@@ -1,6 +1,6 @@
 # A tribo bárbara
 
-Voê está a judando uma equipe de antropólogos a entender o omportamento de uma antiga
+Voê está ajudando uma equipe de antropólogos a entender o omportamento de uma antiga
 tribo bárbara a partir de pergaminhos enontrados em um túmulo reentemente desoberto. Os
 pergaminhos narram as tradições da tribo, que são simples:
 
